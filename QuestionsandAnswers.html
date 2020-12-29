@@ -1,46 +1,105 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-
-  <meta charset="utf-8">
-  <meta name="author" content="Nasif Alam">
-  <meta name="description" content="Knowledgebase on Github">
+  <title>Questions and Answers</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Notes on Github</title>
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="Github.html">Github TEST</a>
+  <nav class="navbar navbar-expand-sm bg-light">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Notes on Github</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Blog</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Tutorials</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Questions and Answers</a>
+    </li>
+
+  </ul>
+</nav>
+
+<br>
+
+<div class="container">
+
+  <h2>Questions and Answers</h2>
+  <br>
+  <ul class="nav flex-column">
+
+    <h5>Foundational</h5>
+    <li class="nav-item">
+      <a class="nav-link active" href="#">How to install Github on a Windows Machine?
+      <span class="badge badge-danger">High</span>
+</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">How to install Github on a Linux Machine?</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">What is branching?</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">How do I manage a project on Github?</a>
+    </li>
+  </ul>
+  <div id="accordion">
+
+
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+
+        </a>
       </div>
-
-      <ul class="nav navbar-nav" >
-        <li class="active"><a href="GithubNotes.html">Notes</a></li>
-        <li><a href="#">Micro Blog</a></li>
-        <li><a href="l">Questions and Answers</a></li>
-        <li><a href="#">Page 3</a></li>
-      </ul>
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          Watch the complete Youtube Video:<a href="https://www.youtube.com/watch?v=RGOj5yH7evk&t=1194s"> Git and GitHub for Beginners - Crash Course </a>
+          <br> <br> Read Notes (section) </br>
+        </div>
+      </div>
     </div>
-  </nav>
 
-  <div class="container">
-    <h2>Questions and Answers on Github</h2>
-    <p> How do we install Github on a Windows Machine? </p>
+
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+        What is branching?
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+         What is forking?
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
   </div>
+</div>
 
-
-  <script src="js/script.js"></script>
 </body>
-
 </html>
